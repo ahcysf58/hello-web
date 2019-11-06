@@ -16,6 +16,7 @@ pipeline {
 			echo 'Now archiving...'
 			archiveArtifacts artifacts: '**/target/.*war'
 		}
+	    }	
         }
         stage('Deploy') {
             steps {
